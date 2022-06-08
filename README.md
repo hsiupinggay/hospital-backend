@@ -13,6 +13,7 @@ https://quiet-eyrie-78491.herokuapp.com/appointment/get?doctorName=<enter name>&
 Q3
 Fix appointment by patient, doctor, date & time
 https://quiet-eyrie-78491.herokuapp.com/appointment/add
+  
 body = {
 "date": "06-23-2022",
 "time": 1200,
@@ -26,6 +27,7 @@ doctor and patient names are case and space sensitive
 Q4
 Cancel appointment by patient, doctor, data & time
 https://quiet-eyrie-78491.herokuapp.com/appointment/delete
+  
 body = {
 "date": "06-23-2022",
 "time": 1200,
@@ -42,6 +44,7 @@ Assumptions/ constraints:
 
 Add patient
 https://quiet-eyrie-78491.herokuapp.com/patient/add
+  
 body = {
 "patientName": "May Lee",
 "age": 67,
@@ -50,6 +53,7 @@ body = {
 
 Add doctor
 https://quiet-eyrie-78491.herokuapp.com/doctor/add
+  
 body = {
 doctorName: "Hua Tuo",
 }
