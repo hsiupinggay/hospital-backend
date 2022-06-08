@@ -8,11 +8,11 @@ Identify the entities & relations.
 
 Q2
 Get all appointments for given doctor and date
-herokuUrl/appointment/get?doctorName=<enter name>&date=<mm-dd-yyyy>
+https://quiet-eyrie-78491.herokuapp.com/appointment/get?doctorName=<enter name>&date=<mm-dd-yyyy>
 
 Q3
 Fix appointment by patient, doctor, date & time
-herokuUrl/appointment/add
+https://quiet-eyrie-78491.herokuapp.com/appointment/add
 body = {
 "date": "06-23-2022",
 "time": 1200,
@@ -25,7 +25,7 @@ doctor and patient names are case and space sensitive
 
 Q4
 Cancel appointment by patient, doctor, data & time
-herokuUrl/appointment/delete
+https://quiet-eyrie-78491.herokuapp.com/appointment/delete
 body = {
 "date": "06-23-2022",
 "time": 1200,
@@ -41,7 +41,7 @@ Assumptions/ constraints:
 - patient and doctor must exist in db before they can be included in appointments
 
 Add patient
-herokuUrl/patient/add
+https://quiet-eyrie-78491.herokuapp.com/patient/add
 body = {
 "patientName": "May Lee",
 "age": 67,
@@ -49,7 +49,7 @@ body = {
 }
 
 Add doctor
-herokuUrl/doctor/add
+https://quiet-eyrie-78491.herokuapp.com/doctor/add
 body = {
 doctorName: "Hua Tuo",
 }
