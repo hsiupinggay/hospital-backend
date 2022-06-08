@@ -24,7 +24,11 @@ const { Schema } = mongoose;
 const appointmentSchema = new Schema(
   {
     date: Date,
-    time: Number,
+    time: {
+      type: Number,
+      min: [800, 'Consultation starts at 8am'],
+      max: [1600, 'Consultation ends at 4pm'],
+    },
     doctor: {
       id: mongoose.Schema.Types.ObjectId,
       name: String,
