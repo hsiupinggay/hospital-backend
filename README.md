@@ -1,68 +1,79 @@
 # hospital-backend for d4l
 
-Q1
+<h2>Q1</h2>
 Identify the entities & relations.
 
 - See patientModel.js and doctorModel.js for patient and doctor objects
 - See appointmentModel.js for how each appointment is stored
 
-Q2
+<h2>Q2</h2>
 Get all appointments for given doctor and date
 <br>
 https://quiet-eyrie-78491.herokuapp.com/appointment/get?doctorName='enter name'&date='mm-dd-yyyy'
 
-Q3
-Fix appointment by patient, doctor, date & time
+<h2>Q3</h2>
+<p>Fix appointment by patient, doctor, date & time
 <br>
 https://quiet-eyrie-78491.herokuapp.com/appointment/add
-<br>
-body = {<br>
-"date": "06-23-2022",<br>
-"time": 1200,<br>
-"doctorName": "Kopi Lim",<br>
-"patientName": "Peter Parker"<br>
-}
-<br>
-date should be entered as mm-dd-yyyy
-<br>
-time should be entered in 24hours format, e.g. 2:45PM is 1445
-<br>
-doctor and patient names are case and space sensitive
+</p>
 
-Q4
+<code>
+body = {
+"date": "06-23-2022",
+"time": 1200,
+"doctorName": "Kopi Lim",
+"patientName": "Peter Parker"
+}</code>
+
+<ul>
+  <li>date should be entered as mm-dd-yyyy</li>
+  <li>time should be entered in 24hours format, e.g. 2:45PM is 1445</li>
+  <li>doctor and patient names are case and space sensitive</li>
+</ul>
+
+<h2>Q4</h2>
+<p>
 Cancel appointment by patient, doctor, data & time
 <br>
 https://quiet-eyrie-78491.herokuapp.com/appointment/delete
-<br>
+</p>
   
-body = {<br>
+<code>body = {<br>
 "date": "06-23-2022",<br>
 "time": 1200,<br>
 "doctorName": "Kopi Lim",<br>
 "patientName": "Peter Parker"<br>
-}
-<br>
-date should be entered as mm-dd-yyyy<br>
-time should be entered in 24hours format, e.g. 2:45PM is 1445<br>
-doctor and patient names are case and space sensitive<br>
+}</code>
 
-Assumptions/ constraints:
+<ul>
+  <li>date should be entered as mm-dd-yyyy</li>
+  <li>time should be entered in 24hours format, e.g. 2:45PM is 1445</li>
+  <li>doctor and patient names are case and space sensitive</li>
+</ul>
+
+<h2>Assumptions/ constraints:</h2>
 
 - patient and doctor must exist in db before they can be included in appointments
+- add patient and doctor with the following
 
-Add patient<br>
+<h3>Add patient</h3>
+<p>
 https://quiet-eyrie-78491.herokuapp.com/patient/add<br>
-<br>
-body = {<br>
-"patientName": "May Lee",<br>
-"age": 67,<br>
-"gender": "female",<br>
+</p>
+<code>
+body = {
+"patientName": "May Lee",
+"age": 67,
+"gender": "female",
 }
-<br>
+</code>
 
-Add doctor<br>
+<h3>Add doctor</h3>
+<p>
 https://quiet-eyrie-78491.herokuapp.com/doctor/add<br>
- 
-body = {<br>
-doctorName: "Hua Tuo",<br>
-}<br>
+</p>
+<code>
+body = {
+doctorName: "Hua Tuo",
+}
+</code>
