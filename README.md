@@ -1,4 +1,5 @@
 # hospital-backend for d4l
+<p> hello! please use an api platform like postman to access </p>
 
 <h2>Q1</h2>
 Identify the entities & relations.
