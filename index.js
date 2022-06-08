@@ -9,7 +9,6 @@
  * ========================================================
  */
 const express = require('express');
-const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 require('dotenv').config();
@@ -25,12 +24,6 @@ require('dotenv').config();
 */
 // Initialise Express instance
 const app = express();
-// Set CORS headers
-const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
-app.use(cors({
-  credentials: true,
-  origin: FRONTEND_URL,
-}));
 // Bind cookie parser middleware to parse cookies in requests
 app.use(cookieParser());
 // Bind Express middleware to parse JSON request bodies
